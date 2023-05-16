@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- fragment_container - это контейнер для фрагментов -->
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <!-- Остальное содержимое фрагмента -->
+    <TextView
+        android:id="@+id/question_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Вопрос"
+        android:textAppearance="?android:textAppearanceMedium" />
+
+    <RadioGroup
+        android:id="@+id/answers_radio_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/question_text_view"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/answer1_radio_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ответ 1"
+            android:textAppearance="?android:textAppearanceMedium" />
+
+        <RadioButton
+            android:id="@+id/answer2_radio_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ответ 2"
+            android:textAppearance="?android:textAppearanceMedium" />
+
+        <RadioButton
+            android:id="@+id/answer3_radio_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ответ 3"
+            android:textAppearance="?android:textAppearanceMedium" />
+
+        <RadioButton
+            android:id="@+id/answer4_radio_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ответ 4"
+            android:textAppearance="?android:textAppearanceMedium" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/next_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/answers_radio_group"
+        android:text="Следующий вопрос" />
+
+</RelativeLayout>
